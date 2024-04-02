@@ -25,13 +25,17 @@
     "dev": "cross-env npm run build:server && medusa develop"
   },
   "dependencies": {
-    "@medusajs/admin": "latest",
+    "medusa-plugin-category-images": "^1.0.17",
+    "@medusajs/medusa": "^1.14.0",
+    "@medusajs/admin": "^7.0.0",
+    "medusa-react": "^9.0.4",
+    "@medusajs/ui": "^1.0.0",
+    "@medusajs/icons": "^1.0.0",
     "@medusajs/cache-inmemory": "latest",
     "@medusajs/cache-redis": "latest",
     "@medusajs/event-bus-local": "latest",
     "@medusajs/event-bus-redis": "latest",
     "@medusajs/file-local": "^1.0.3",
-    "@medusajs/medusa": "latest",
     "@tanstack/react-query": "4.22.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -41,7 +45,6 @@
     "medusa-interfaces": "latest",
     "medusa-payment-manual": "latest",
     "medusa-payment-stripe": "latest",
-    "medusa-plugin-wishlist": "^1.1.43",
     "prism-react-renderer": "^2.0.4",
     "typeorm": "^0.3.16"
   },

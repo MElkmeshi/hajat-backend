@@ -40,10 +40,8 @@ const plugins = [
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
+      backend_url:"https://admin.hajat.com.ly"
     },
-  },
-  {
-    resolve: `medusa-plugin-wishlist`,
   },
   {
     resolve: "@medusajs/admin",
@@ -53,6 +51,12 @@ const plugins = [
       develop: {
       	open: process.env.OPEN_BROWSER !== "false",
       },
+    },
+  },
+  {
+    resolve: 'medusa-plugin-category-images',
+    options: {
+      enableUI: true,
     },
   },
 ];
